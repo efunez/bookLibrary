@@ -25,42 +25,48 @@
         <div class="col-8 mt-5">
           <!-- form for adding new books -->
           <div id="books">
-            <form id="addBook" action="#">
-              <h3>Add a new book to the library</h3>
-              <div class="form-group">
-                <label for="coverImage" class="w-50">CoverImage:</label>
-                <div class="input-group">
-                  <input
-                    id="coverImage"
-                    type="file"
-                    class="form-control w-50"
-                    aria-describedby="inputGroupFileAddon01"
-                    style="width: 50%"
-                  />
+            <form id="addBook" action="#" class="w-100 border">
+              <h5>Add a new book to the library</h5>
+              <div class="form-group row mx-1 mt-3">
+                <label for="title" class="col-sm-2 col-form-label"
+                  >Title:</label
+                >
+                <div class="col-sm-9">
+                  <input id="title" type="text" class="form-control" />
                 </div>
               </div>
-
-              <div class="form-group">
-                <label for="title" class="w-50">Title:</label>
-                <input id="title" type="text" class="form-control w-50" />
+  
+              <!-- Author -->
+              <div class="form-group row mx-1 mt-2">
+                <label for="author" class="col-sm-2 col-form-label"
+                  >Author:</label
+                >
+                <div class="col-sm-9">
+                  <input id="author" type="text" class="form-control" />
+                </div>
               </div>
-
-              <div class="form-group">
-                <label for="author" class="w-50">Author:</label>
-                <input id="author" type="text" class="form-control w-50" />
+  
+              <!-- Release Date -->
+              <div class="form-group row mx-1 mt-2">
+                <label for="releaseDate" class="col-sm-4 col-form-label"
+                  >Release date:</label
+                >
+                <div class="col-sm-7">
+                  <input id="releaseDate" type="text" class="form-control" />
+                </div>
               </div>
-
-              <div class="form-group">
-                <label for="releaseDate" class="w-50">Release date:</label>
-                <input id="releaseDate" type="text" class="form-control w-50" />
+  
+              <!-- Keywords -->
+              <div class="form-group row mx-1 mt-2">
+                <label for="keywords" class="col-sm-2 col-form-label"
+                  >Keywords:</label
+                >
+                <div class="col-sm-9">
+                  <input id="keywords" type="text" class="form-control" />
+                </div>
               </div>
-
-              <div class="form-group">
-                <label for="keywords" class="w-50">Keywords:</label>
-                <input id="keywords" type="text" class="form-control w-50" />
-              </div>
-
-              <button id="add" type="submit" class="btn btn-primary mt-2">
+  
+              <button id="add" type="submit" class="btn btn-warning mt-2">
                 Add Book
               </button>
             </form>
