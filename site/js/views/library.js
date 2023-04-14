@@ -33,6 +33,8 @@ app.LibraryView = Backbone.View.extend({
   addBook: function (e) {
     e.preventDefault();
 
+    
+
     var formData = {};
 
     $("#addBook div")
@@ -53,5 +55,18 @@ app.LibraryView = Backbone.View.extend({
       });
 
     this.collection.add(new app.Book(formData));
+    this.clearInputs();
+  },
+
+  clearInputs: function(){
+    var titleElement = $('#title'); // title input
+    var authorElement = $('#author'); // author input
+    var releaseDateElement = $('#releaseDate'); // releaseDate input
+    var keywordsElement = $('#keywords'); // keywords input
+    //clear inputs
+    titleElement.val("");
+    authorElement.val("");
+    releaseDateElement.val("");
+    keywordsElement.val("");
   },
 });
